@@ -17,27 +17,33 @@ public class LauncherManager {
             protected Void call() throws Exception {
                 try {
                     // Этап 1: Проверка файлов игры
-                    updateProgress(0.1, "Проверка файлов игры...");
+                    updateMessage("Проверка файлов игры...");
+                    updateProgress(0.1, 1.0);
                     Thread.sleep(800);
 
                     // Этап 2: Загрузка ресурсов
-                    updateProgress(0.3, "Загрузка ресурсов...");
+                    updateMessage("Загрузка ресурсов...");
+                    updateProgress(0.3, 1.0);
                     Thread.sleep(1000);
 
                     // Этап 3: Инициализация Java
-                    updateProgress(0.5, "Инициализация Java...");
+                    updateMessage("Инициализация Java...");
+                    updateProgress(0.5, 1.0);
                     Thread.sleep(800);
 
                     // Этап 4: Загрузка мира
-                    updateProgress(0.7, "Загрузка мира...");
+                    updateMessage("Загрузка мира...");
+                    updateProgress(0.7, 1.0);
                     Thread.sleep(1000);
 
                     // Этап 5: Запуск игры
-                    updateProgress(0.9, "Запуск Minecraft...");
+                    updateMessage("Запуск Minecraft...");
+                    updateProgress(0.9, 1.0);
                     Thread.sleep(500);
 
                     // Завершение
-                    updateProgress(1.0, "Готово!");
+                    updateMessage("Готово!");
+                    updateProgress(1.0, 1.0);
                     
                     // В реальном приложении здесь был бы код запуска Minecraft
                     // Например: ProcessBuilder для запуска java с параметрами Minecraft
@@ -63,7 +69,7 @@ public class LauncherManager {
             @Override
             protected void updateProgress(double workDone, double max) {
                 super.updateProgress(workDone, max);
-                progressCallback.updateProgress(workDone, getCurrentMessage());
+                progressCallback.updateProgress(workDone / max, getMessage());
             }
         };
 

@@ -7,88 +7,45 @@
 *.so
 *.a
 *.out
+*.pyc
+__pycache__/
 
 # Dependencies
-lib/
-libs/
+node_modules/
+venv/
+.venv/
+.mypy_cache/
+.pytest_cache/
 target/
+.gradle/
+
+# Build directories
+dist/
 build/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
 
 # Logs and temp files
 *.log
 *.tmp
-*.swp
-
-# Editors
-.idea/
-.vscode/
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Coverage reports
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage
 coverage/
 htmlcov/
 .coverage
-
-# OS specific
-.DS_Store
-Thumbs.db
-
-# Package manager
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Python specific
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-.venv/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.git/
-.mypy_cache/
-.pytest_cache/
-.hypothesis/
-
-# Java specific
-*.class
-*.jar
-*.war
-*.ear
-hs_err_pid*
-replay_pid*
-
-# Gradle
-.gradle/
-build/
-
-# Maven
-target/
-!src/main/**
-!src/test/**
-
-# Temporary folders
-tmp/
-temp/
-.DS_Store
-Thumbs.db
 
 # Compressed files
 *.zip
