@@ -296,6 +296,6 @@ public class LauncherUI {
     }
 
     public VBox getRoot() {
-        return (VBox) root.getCenter(); // Возвращаем основной контейнер
+        return root;
     }
 }
