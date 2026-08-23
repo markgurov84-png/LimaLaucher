@@ -1,0 +1,28 @@
+```
+# Compiled and build artifacts
+*.class
+*.o
+*.obj
+*.out
+target/
+
+# Dependencies
+.m2/
+.gradle/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Editors
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local
+*.env.*
+```node_modules/
+.next/
+dist/
+build/
